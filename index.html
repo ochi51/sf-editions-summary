@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Symfony - Editions</title>
+    <meta name="description" content="Edition for Symfony PHP framework">
+    <meta name="author" content="Yuichi Ochiai">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <style type="text/css">
+      .reveal h1,
+      .reveal h2,
+      .reveal h3,
+      .reveal h4,
+      .reveal h5,
+      .reveal h6 {
+        text-transform: none;
+      }
+    </style>
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+    <!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-markdown>
+          <script type="text/template">
+            # Symfony
+            # Editions
+
+            <small>Created by [@ochiai](https://www.facebook.com/cstap.ochiai)</small>
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## About
+
+            落合 雄一[@ochiai](https://www.facebook.com/cstap.ochiai)
+
+            ***
+            * 20〜23歳 三洋電機 デジタル技術研究所
+            * 24〜27歳 フリーエンジニア
+            * 24〜27歳 電気通信大学 情報理工学部(現在休学中)
+            * 27〜(現在) サイボウズスタートアップス CTO
+            ***
+            最終学歴 = 中卒(￣□￣;)!!
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Attention!!
+
+            スゴいことは書いてません・・・
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## About Slide
+
+            SymfonyのEditionの紹介
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Editionって？
+
+            ***
+            * Symfony Standard Edition(★1,096)
+            * Knp Rad Edition(★32)
+            * Symfony REST Edition(★219)
+            * Symfony CMF Standard Edition(★24)
+            * Kunstmaan Bundles Standard Edition(★48)
+            * etc...
+            ***
+          </script>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## ちなみにStandard Editionしか
+              ## 使ったことがないって人？
+            </script>
+          </section>
+
+          <section data-markdown>
+            <script type="text/template">
+              ### みんな複数のEdition使ってるのね・・・
+              ### 俺のLTの意味って・・・(ＴｍＴ)ｳｩｩ･･･
+            </script>
+          </section>
+
+          <section data-markdown>
+            <script type="text/template">
+              ### いやいや負けへんで！！
+              ### 今年は阪神が日本シリーズ出てるし、
+              ### 弱気になってられるか！！
+
+              ってことでもう少しお付き合いくださいo(^-^)o
+            </script>
+          </section>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Symfony Standard Edition
+
+            ***
+            * 最も一般的なEdition
+            * Symfony2.6に対応
+            * Symfony初心者の方は、これで勉強してください
+            * 説明不要でしょう！
+            ***
+            Install
+            ```{.bash}
+            composer create-project symfony/framework-standard-edition project-name
+            ```
+          </script>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Knp Rad Edition
+
+              ***
+              * Rapid Application Development (Rad)
+              * 個人的にオススメなEdition
+              * Symfony2.4以上に対応
+              * スピード重視の開発に便利
+              * http://rad.knplabs.com/
+              * https://github.com/KnpLabs/rad-edition
+              ***
+              Install
+              ```{.bash}
+              composer create-project -s dev --prefer-dist --dev knplabs/rad-edition project-name
+              ```
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Main Bundles
+              ***
+              * KnpRadBundle
+              * MopaBootstrapBundle
+              ***
+            </script>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Symfony REST Edition
+
+              ***
+              * JSメインで開発するならこれ
+              * Symfony2.3以上
+              * https://github.com/KnpLabs/rad-edition
+              ***
+              Install
+              ```{.bash}
+              composer create-project -s dev gimler/symfony-rest-edition project-name
+              ```
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Main Bundles
+
+              ***
+              * FOSRestBundle
+              * FOSHttpCacheBundle
+              * NelmioApiDocBundle
+              * BazingaHateoasBundle
+              * HautelookTemplatedUriBundle
+              * BazingaRestExtraBundle
+              * etc...
+              ***
+            </script>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Symfony CMF Standard Edition
+
+              ***
+              * Content Management Framework (CMF)
+              * CMSの一般的なEdition
+              * Symfony2.3
+              * まともに触ったことないですm(__)m
+              * http://cmf.symfony.com/
+              * https://github.com/symfony-cmf/standard-edition
+              * http://symfony.com/doc/current/cmf/index.html
+              ***
+              Install
+              ```{.bash}
+              composer create-project symfony-cmf/standard-edition project-name ~1.1
+              ```
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Main Bundles
+              ***
+              * CmfBlockBundle
+              * CmfCoreBundle
+              * CmfContentBundle
+              * CmfCreateBundle
+              * CmfMediaBundle
+              * CmfRoutingBundle
+              * KnpMenuBundle
+              * CmfSearchBundle
+              * CmfSeoBundle
+              * CmfSimpleCmsBundle
+              * SonataDoctrinePHPCRAdminBundle
+              * CmfTreeBrowserBundle
+              * etc...
+              ***
+            </script>
+          </section>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            # Other Editions
+
+            ***
+            * Kunstmaan Bundles Standard Edition
+              - いい感じなCMS
+              - http://bundles.kunstmaan.be/getting-started
+              - https://github.com/Kunstmaan/KunstmaanBundlesStandardEdition
+            * Symfony CQRS Edition
+              - CQRS(コマンドクエリ分離原則)
+              - CQRSはDDDをさらにスケーラビリティにした概念
+              - https://github.com/TheBigBrainsCompany/symfony-cqrs-edition
+            ***
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            # THE END
+
+            ## プログラマー募集中
+            ### よかったら一緒に
+            ### おもしろい事業やりましょう！
+            <small>Created by [@ochiai](https://www.facebook.com/cstap.ochiai)</small>
+          </script>
+        </section>
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>
